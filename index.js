@@ -19,8 +19,63 @@ function promptUser() {
             message: "Enter in the Managers Id: "
         },
         {
-            type: "input", 
-            
+            type: "input",
+            name: "emailManager",
+            message: "Enter the email of the manager: " 
+        },
+
+        {
+            type: "input",
+            name: "firstEngineer",
+            message: "Enter the email of the first engineer: "
         }
+        ,
+        {
+            type: "input",
+            name: "idFirstEngineer",
+            message: "Enter the id of the first engineer: "
+        },
+
+        {
+            type: "input",
+            name: "emailFirstEngineer",
+            message: "Enter the email of the first engineer: "
+        },
+
+        {
+            type: "input",
+            name: "secondEngineer",
+            message: "Enter the email of the second engineer: "
+        },
+
+        {
+            type: "input",
+            name: "idSecondEngineer",
+            message: "Enter the id of the second engineer: "
+        },
+
+        {
+            type: "input",
+            name: "emailSecondEngineer",
+            message: "Enter the email of the second engineer: "
+        },
+
+        {
+            type: "input",
+            name: "thirdEngineer",
+            message: "Enter the email of the third engineer: "
+        },
+
+        {
+            type: "input",
+            name: "idThirdEngineer",
+            message: "Enter the id of the third engineer: "
+        },
+
+        {
+            type: "input",
+            name: "emailThirdEngineer",
+            message: "Enter the email of the third engineer: "
+        },
     ])
 }
