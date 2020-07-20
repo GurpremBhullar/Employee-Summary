@@ -29,28 +29,11 @@ function HTMLgenerator(empInfo) {
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
+              <th>${empInfo.managersName ?answers.managersName : " "}</th>
+              <th>${empInfo.managerId ?answers.managerId : " "}</th>
+              <th>${empInfo.emailManager ?answers.emailManager : " "}</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
         </table>
       </div>
     
@@ -60,28 +43,11 @@ function HTMLgenerator(empInfo) {
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
+            <th>${empInfo.firstEngineer ?answers.firstEngineer : " "}</th>
+            <th>${empInfo.idFirstEngineer ?answers.idFirstEngineer : " "}</th>
+            <th>${empInfo.emailFirstEngineer ?answers.emailFirstEngineer : " "}</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
         </table>
       </div>
 
@@ -91,28 +57,11 @@ function HTMLgenerator(empInfo) {
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
+            <th>${empInfo.secondEngineer ?answers.secondEngineer : " "}</th>
+            <th>${empInfo.idSecondEngineer ?answers.idSecondEngineer : " "}</th>
+            <th>${empInfo.emailSecondEngineer ?answers.emailSecondEngineer : " "}</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
         </table>
       </div>
 
@@ -127,25 +76,9 @@ function HTMLgenerator(empInfo) {
               <th>Email</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
         </table>
       </div>
+      
       <div class="container">
         <h2>The Intern Table</h2>
         <p>info</p>            
