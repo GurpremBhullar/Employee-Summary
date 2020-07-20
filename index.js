@@ -3,6 +3,7 @@ const fs = require ("fs");
 const util = require ("util");
 const HTMLgenerator = require ("HTMLgenerator");
 const jest = require("jest");
+const { generate } = require("rxjs");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -77,5 +78,42 @@ function promptUser() {
             name: "emailThirdEngineer",
             message: "Enter the email of the third engineer: "
         },
+
+        {
+            type: "input",
+            name: "internsName",
+            message: "Enter name of Intern "
+        },
+
+        {
+            type: "input",
+            name: "interId",
+            message: "Enter the id of the intern: "
+        },
+
+        {
+            type: "input",
+            name: "internsEmail",
+            message: "Enter the email of the intern: "
+        },
     ])
 }
+
+async function enterEmployee() {
+    console.log("Hi, lets get started with some information")
+    try{
+        const empInfo = await promptUser();
+
+        const frontEnd = generateHTML(empInfo);
+
+        await writeFileAsync("index.html", html);
+
+        console.log("index.html generated");
+    }
+
+    catch(err) {
+        console.log(EvalError);
+    }
+
+}
+enterEmployee();
