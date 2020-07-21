@@ -23,61 +23,60 @@ function HTMLgenerator(empInfo) {
         </div>
     </div>
 
-    <div class="container">
-        <h2>The Managers Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>${empInfo.managersName ?answers.managersName : " "}</th>
-              <th>${empInfo.managerId ?answers.managerId : " "}</th>
-              <th>${empInfo.emailManager ?answers.emailManager : " "}</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+    <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{${empInfo.managersName}</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: ${empInfo.managersName ?empInfo.managersName : " "}</li>
+                    <li class="list-group-item">Email: ${empInfo.managersId ?empInfo.managersId : " "}</li>
+                    <li class="list-group-item">Office number: ${empInfo.emailManager ?empInfo.emailManager : " "}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card employee-card">
+        <div class="card-header">
+            <h2 class="card-title">${empInfo.firstEngineer}</h2>
+            <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>engineer one</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">ID: ${empInfo.idFirstEngineer}</li>
+                <li class="list-group-item">Email: ${empInfo.emailFirstEngineer}</li>
+                <li class="list-group-item">GitHub: ${empInfo.githubEngineer1}</li>
+            </ul>
+        </div>
+    </div>
     
-      <div class="container">
-        <h2>The Engineer one Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-            <th>${empInfo.firstEngineer ?answers.firstEngineer : " "}</th>
-            <th>${empInfo.idFirstEngineer ?answers.idFirstEngineer : " "}</th>
-            <th>${empInfo.emailFirstEngineer ?answers.emailFirstEngineer : " "}</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+    <div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">${empInfo.secondEngineer}</h2>
+        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>engineer 2</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: ${empInfo.IdSecondEngineer}</li>
+            <li class="list-group-item">Email: ${empInfo.emailSecondEngineer}</li>
+            <li class="list-group-item">GitHub: ${empInfo.githubEngineer2</li>
+        </ul>
+    </div>
+</div>
 
-      <div class="container">
-        <h2>The e2 Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-            <th>${empInfo.secondEngineer ?answers.secondEngineer : " "}</th>
-            <th>${empInfo.idSecondEngineer ?answers.idSecondEngineer : " "}</th>
-            <th>${empInfo.emailSecondEngineer ?answers.emailSecondEngineer : " "}</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-
-      <div class="container">
-        <h2>The e3 Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-            <th>${empInfo.thirdEngineer ?answers.thirdEngineer : " "}</th>
-            <th>${empInfo.idThirdEngineer ?answers.idThirdEngineer : " "}</th>
-            <th>${empInfo.emailThirdEngineer ?answers.emailThirdEngineer : " "}</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">{{ name }}</h2>
+        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: {{ id }}</li>
+            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+        </ul>
+    </div>
+</div>
       
       <div class="container">
         <h2>The Intern Table</h2>

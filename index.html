@@ -8,152 +8,92 @@
     <link rel="stylesheet" href="development/Employee-Summary/style.css">
     <title>Employee Summary</title>
 </head>
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="card-header card border-dark mb-4">
-                <h1>Gurprem's Team</h1>
-                <p>my group of elites</p>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 jumbotron mb-3 team-heading">
+                    <h1 class="text-center">My Team</h1>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="team-area col-12 d-flex justify-content-center">
+                    {{ team }}
+                </div>
+            </div>
+        </div>
 
-    <div class="container">
-        <h2>The Managers Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+        <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{{ name }}</h2>
+                <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{ id }}</li>
+                    <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                    <li class="list-group-item">Office number: {{ officeNumber }}</li>
+                </ul>
+            </div>
+        </div>
     
-      <div class="container">
-        <h2>The Engineer one Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{{ name }}</h2>
+                <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{ id }}</li>
+                    <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                    <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+                </ul>
+            </div>
+        </div>
 
-      <div class="container">
-        <h2>The e2 Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{{ name }}</h2>
+                <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{ id }}</li>
+                    <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                    <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+                </ul>
+            </div>
+        </div>
 
-      <div class="container">
-        <h2>The e3 Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="container">
-        <h2>The Intern Table</h2>
-        <p>info</p>            
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>334</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>002</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>098</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{{ name }}</h2>
+                <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{ id }}</li>
+                    <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                    <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card employee-card">
+            <div class="card-header">
+                <h2 class="card-title">{{ name }}</h2>
+                <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{ id }}</li>
+                    <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                    <li class="list-group-item">School: {{ school }}</li>
+                </ul>
+            </div>
+        </div>
+        
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

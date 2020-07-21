@@ -19,10 +19,17 @@ function promptUser() {
             name: "managerId",
             message: "Enter in the Managers Id: "
         },
+
         {
             type: "input",
             name: "emailManager",
             message: "Enter the email of the manager: " 
+        },
+
+        {
+            type: "input",
+            name: "officeManager",
+            message: "Enter the office number of the manager: " 
         },
 
         {
@@ -45,6 +52,12 @@ function promptUser() {
 
         {
             type: "input",
+            name: "githubEngineer1",
+            message: "Enter the github of the first engineer: "
+        },
+
+        {
+            type: "input",
             name: "secondEngineer",
             message: "Enter the email of the second engineer: "
         },
@@ -63,6 +76,12 @@ function promptUser() {
 
         {
             type: "input",
+            name: "githubEngineer2",
+            message: "Enter the github of the second engineer: "
+        },
+
+        {
+            type: "input",
             name: "thirdEngineer",
             message: "Enter the email of the third engineer: "
         },
@@ -77,6 +96,12 @@ function promptUser() {
             type: "input",
             name: "emailThirdEngineer",
             message: "Enter the email of the third engineer: "
+        },
+
+        {
+            type: "input",
+            name: "githubEngineer3",
+            message: "Enter the github of the third engineer: "
         },
 
         {
@@ -104,7 +129,7 @@ async function enterEmployee() {
     try{
         const empInfo = await promptUser();
 
-        const frontEnd = generateHTML(empInfo);
+        const frontEnd = HTMLgeneratorL(empInfo);
 
         await writeFileAsync("index.html", html);
 
